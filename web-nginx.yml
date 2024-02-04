@@ -1,6 +1,6 @@
 ---
 - name: install nginx on test server
-  hosts: test-server
+ # hosts: test-server
   become: yes
   gather_facts: true
   tasks:
