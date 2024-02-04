@@ -1,0 +1,12 @@
+---
+- name: copy web site to remote server
+  hosts: test-server
+  become: yes
+  gather_facts: yes
+  tasks:
+    - name: copy_files
+      copy: src=/home/ec2-user/ansible-playbooks/index.html dest=/var/www/html/
+    - name: copy_files
+      copy: src=/home/ec2-user/ansible-playbooks/readme.txt dest=/var/www/html/
+    - name: move connetct
+      command: mv /var/www/html/index.html /tmp/
