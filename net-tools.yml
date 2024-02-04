@@ -1,0 +1,9 @@
+---
+- name: Install net-tools
+  hosts: test-server
+  become: true
+  gather_facts: true
+  tasks:
+    - name: install net-tools
+      package: name=net-tools state=present
+#     package: name=net-tools state=absent ( to delete package set as absent)
