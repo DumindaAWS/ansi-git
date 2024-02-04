@@ -5,8 +5,8 @@
   gather_facts: yes
   tasks:
     - name: copy_files
-      copy: src=/home/ec2-user/ansible-playbooks/index.html dest=/var/www/html/
+      copy: src=index.html dest=/var/www/html/
     - name: copy_files
-      copy: src=/home/ec2-user/ansible-playbooks/readme.txt dest=/var/www/html/
-    - name: move connetct
-      command: mv /var/www/html/index.html /tmp/
+      copy: src=readme.txt dest=/var/www/html/
+  #  - name: move connetct
+   #   command: mv /var/www/html/index.html /tmp/
