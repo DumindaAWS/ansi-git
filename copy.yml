@@ -1,6 +1,6 @@
 ---
 - name: copy web site to remote server
-  hosts: test-server
+  hosts: 172.31.40.93
   become: yes
   gather_facts: yes
   tasks:
