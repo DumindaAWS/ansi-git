@@ -1,0 +1,11 @@
+---
+- name: install nginx on test server
+  hosts: test-server
+  become: yes
+  gather_facts: true
+  tasks:
+    - name: install nginx
+      apt: name=nginx state=present
+        #apt: name=nginx state=present
+    - name: start/stop nginx
+      command: systemctl start nginx
