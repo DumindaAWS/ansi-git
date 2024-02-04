@@ -1,6 +1,6 @@
 ---
 - name: Install net-tools
-  hosts: test-server
+  hosts: 172.31.40.93
   become: true
   gather_facts: true
   tasks:
